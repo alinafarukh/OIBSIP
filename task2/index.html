@@ -1,0 +1,351 @@
+                                                                                  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alina portfolio</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(101, 28, 26);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+    padding: 15px 25px;
+    background-color: rgb(177, 50, 45);
+    gap: 20px;
+}
+
+.alina {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 190, 190);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    width: 100%;
+    display: flow-root;
+}
+
+/* Hero Section */
+.rohanmain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.rohanmain > div {
+    width: 45%;
+}
+
+.rohan1 {
+    font-size: clamp(1.7rem, 4vw, 2.75rem);
+    line-height: 1.5;
+    margin: 40px 0;
+}
+
+.rohan2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rohan2 img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.pink {
+    color: rgb(237, 83, 83);
+    font-weight: 800;
+}
+
+#element {
+    color: rgb(224, 85, 85);
+}
+
+/* Horizontal Line */
+hr {
+    border: 0;
+    background-color: rgb(233, 65, 65);
+    height: 2px;
+    margin: 40px auto;
+    width: 85%;
+}
+
+/* Work Experience Section */
+.esha {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto 60px;
+}
+
+.esha h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.text-grey {
+    color: rgb(255, 160, 160);
+}
+
+.work {
+    font-size: 1.9rem;
+}
+
+
+.esha .box{
+     background-color: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+}
+.esha .vertical{
+ height: 93px;
+width: 1px;
+background-color: white;
+margin: 0 100px;
+}
+.vertical-title{
+position: relative;
+top: 29px;
+width: 150px;
+left: -50px;
+}
+.vertical-desc{
+position: relative;
+top: 29px;
+color:rgb(219, 55, 55) ;
+width: 150px;
+font-size: 9px;
+left: -49px;
+}
+.image-top{
+width: 60px;
+ position: relative;
+    top: -51px;
+     left: -29px;
+}
+.box{
+justify-content: space-around;
+}
+
+.bottom-bar {
+    background: rgb(190, 40, 29);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.bottom-bar p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+    top: -200px;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="alina">Alina's portfolio</div>
+
+        <div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="rohanmain" id="about">
+
+        <div class="rohan1">
+            Hey, I am <span class="pink">Alina</span>
+            <div>and I am a passionate</div>
+            <div>web developer</div>
+            <span id="element"></span>
+        </div>
+
+        <div class="rohan2">
+            <img src="bf467db4-b9d1-482e-b417-591923acab29.jpg"
+                 alt="developer">
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="esha" id="services">
+
+        <span class="text-grey">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+
+            <div class="vertical">
+                <img src="ll.webp" class="image-top" alt="CSS Developer">
+
+                <div class="vertical-title">
+                    CSS Developer (2025-2026)
+                </div>
+
+                <div class="vertical-desc">
+                    Designed attractive websites using CSS, colors, layouts, and responsive styling for a better user experience.
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img src="file.webp" class="image-top" alt="HTML Developer">
+
+                <div class="vertical-title">
+                    HTML Developer (2025-2026)
+                </div>
+
+                <div class="vertical-desc">
+                    
+                    Created structured web pages using HTML elements, headings, images, links, and organized content sections.
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img src="vedio.jpg" class="image-top" alt="Video Editor">
+
+                <div class="vertical-title">
+                    Video Editor (2025-2026)
+                </div>
+
+                <div class="vertical-desc">
+                    Edited videos with smooth transitions, creative effects, background music, and engaging visual storytelling techniques.
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img src="free.webp" class="image-top" alt="Freelancer">
+
+                <div class="vertical-title">
+                    Freelancer (2022-2023)
+                </div>
+
+                <div class="vertical-desc">
+                    Worked on creative projects, completed client tasks, improved technical skills, and delivered quality results.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: [
+                'Web Developer',
+                'Freelancer',
+                'Web Designer',
+                'Video Editor'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+
+</main>
+
+<br>
+
+<br>
+<br>
+<br>
+    <br>
+    <br>
+    <br>            
+
+
+            <!-- Bottom Bar -->
+             
+            
+        <footer>
+            <div class="bottom-bar">
+
+                <p>
+                    &copy; 2026 A Personal porfolio website
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
