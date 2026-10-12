@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="font">teddyshop</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Main Box */
+
+.box {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navigation */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+    padding: 0 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.button {
+    padding: 6px 14px;
+    background-color: rgb(221, 146, 199);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/* Main Section */
+
+main {
+    flex: 1;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.topright {
+    width: 50%;
+}
+
+.topleft {
+    width: 50%;
+    text-align: center;
+}
+
+.topleft img {
+    width: 350px;
+    max-width: 100%;
+}
+
+.section1 {
+    min-height: 50vh;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.my-1 {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.cute {
+    color: palevioletred;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.tit {
+    width: 64px;
+    padding: 2px;
+}
+
+
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products h2 {
+    color: #9b59b6;
+    margin-bottom: 10px;
+}
+
+.products-intro {
+    margin-bottom: 30px;
+}
+
+.product-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 12px 0 5px;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.card button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #b565d9;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #8e44ad;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background: #343434;
+    padding-top: 30px;
+    color: white;
+    width: 100%;
+}
+
+.alina {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    width: 33.3%;
+    padding: 7px;
+}
+
+.footer-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: palevioletred;
+    transition: 0.5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.list li a {
+    color: white;
+}
+
+.social-icons {
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    list-style: none;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.social-icons i:hover {
+    color: blueviolet;
+}
+
+.bottom-bar {
+    background: palevioletred;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.bottom-bar p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teddy Love Corner</title>
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-hidden">
+
+    <div class="box box1">
+
+        <!-- Header -->
+        <header>
+            <nav class="flex">
+
+                <div class="logo"
+                    style="color: rgb(221, 146, 199);
+                           font-weight: bolder;
+                           font-size: 1.3rem;">
+                    Teddy Shop
+                </div>
+
+                <ul class="navbar">
+                    <!-- <li>Home</li> -->
+
+                    <li>Size-by-Type</li>
+                    <li>Delivery</li>
+                    <li>Help</li>
+
+                    <li>
+                        <button class="button">Order Now</button>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <hr>
+            <br>
+        </header>
+
+
+        <!-- Main Content -->
+        <main class="min-h-screen">
+
+            <section class="section1 justify center">
+
+                <div class="top">
+
+                    <!-- Left / Text Side -->
+                    <div class="topright">
+
+                        <img class="tit"
+                            src="logo.webp"
+                            alt="Teddy Shop Logo">
+
+                        <br>
+
+                        <h5 class="cute my-1">
+                            The Perfect Hug for Every Moment
+                        </h5>
+
+                        <h1>
+                            Teddy Love Corner
+                        </h1>
+
+                        <h1 class="cute">
+                            In Pakistan
+                        </h1>
+
+                        <br>
+
+                        <p>
+                            Discover adorable, soft and cuddly teddy bears
+                            for every special occasion. From cute little teddy
+                            bears to big and giant sizes, we have the perfect
+                            teddy for birthdays, surprises, gifts and
+                            celebrations. Shop your favorite teddy bears and
+                            bring a smile to someone special. 🧸💕
+                        </p>
+
+                    </div>
+
+
+                    <!-- Right / Image Side -->
+                    <div class="topleft">
+
+                        <img src="teddy beaR.jpg"
+                            alt="Teddy Bear">
+
+                    </div>
+
+                </div>
+              
+<section class="products">
+
+    <h2>Our Cute Teddy Bears 🧸</h2>
+
+    <p class="products-intro">
+        Choose the perfect teddy bear for your special someone 💕
+    </p>
+
+    <div class="product-container">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="pink.jpg" alt="Pink Teddy Bear">
+            <h3>Pink Teddy Bear</h3>
+            <p>Rs. 2,500</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <img src="red.jpeg" alt="Red Teddy Bear">
+            <h3>Red Teddy Bear</h3>
+            <p>Rs. 3,000</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <img src="nike.webp" alt="White Teddy Bear">
+            <h3>White Teddy Bear</h3>
+            <p>Rs. 2,800</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card">
+            <img src="blue teddy bear.jpg" alt="Blue Teddy Bear">
+            <h3>Blue Teddy Bear</h3>
+            <p>Rs. 5,500</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="card">
+            <img src="multi color.jpeg" alt="Multi-color Teddy Bear">
+            <h3>Multi-color Teddy Bear</h3>
+            <p>Rs. 3,200</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="card">
+            <img src="purple.jpeg" alt="Cute Purple Teddy">
+            <h3>Cute Purple Teddy</h3>
+            <p>Rs. 3,500</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="card">
+            <img src="bear.webp" alt="Love Teddy Bear">
+            <h3>Love Teddy Bear</h3>
+            <p>Rs. 4,000</p>
+            <button>Order Now</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="card">
+            <img src="gaint.jpeg" alt="Giant White Teddy">
+            <h3>Giant White Teddy</h3>
+            <p>Rs. 5,500</p>
+            <button>Order Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="alina">
+
+                <!-- Contact -->
+                <div class="footer-content">
+
+                    <h3>Contact</h3>
+
+                    <p>
+                        Email: alinafarukh793@gmail.com
+                    </p>
+
+                    <p>
+                        Phone: 0302 9354616
+                    </p>
+
+                    <p>
+                        Address: Javad Park 56 133
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-content">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="list">
+
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Product</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Follow Us -->
+                <div class="footer-content">
+
+                    <h3>Follow Us</h3>
+
+                    <ul class="social-icons">
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Bar -->
+            <div class="bottom-bar">
+
+                <p>
+                    &copy; 2026 Teddy Love Corner. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
